@@ -14,6 +14,7 @@ CREATE TABLE Employees (
 );
 
 CREATE TABLE Dept_manager (
+    id serial PRIMARY KEY NOT NULL,
     dept_no VARCHAR(30) NOT NULL,
     emp_no numeric(30) NOT NULL,
     FOREIGN KEY (emp_no) REFERENCES Employees(emp_no),
@@ -21,7 +22,7 @@ CREATE TABLE Dept_manager (
 );
 
 CREATE TABLE Dept_emp (
-    id SERIAL PRIMARY KEY,
+    id SERIAL PRIMARY KEY NOT NULL,
     emp_no numeric(30) NOT NULL,
     dept_no VARCHAR(30) NOT NULL,
     FOREIGN KEY (emp_no) REFERENCES Employees(emp_no),

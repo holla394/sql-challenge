@@ -25,7 +25,7 @@ hire_date DATE
 
 Salaries
 -
-emp_no int FK >- Employees.emp_no
+emp_no int FK - Employees.emp_no
 salary int INDEX
 
 Titles
